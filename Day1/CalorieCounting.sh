@@ -3,7 +3,7 @@
 ######################################################
 # AUTHOR: Megan Kozub
 # DATE:   2023-07-23
-# FILE:   Day1.sh
+# FILE:   CalorieCounting.sh
 # BRIEF:
 #     Advent of Code 2022 - Day 1
 #     adventofcode.com/2022/day/1
@@ -16,7 +16,7 @@
 #        is carrying. The items carried by distinct
 #        elves is separated by an empty line. 
 # RUN:
-# 	./Day1.sh Day1_input.txt
+# 	./CalorieCounting.sh Day1_input.txt
 ######################################################
 
 # Get the input file from the command-line arguments (1st arg)
@@ -82,8 +82,5 @@ then
 fi
 
 # Display the results
-#echo Max Calories: $MAX_CALORIES
-
-printf "Cur Calories: $CUR_CALORIES\n1st: $FIRST\n2nd: $SECOND\n3rd: $THIRD\n\n"
-
+echo Max Calories: $FIRST
 echo Calories of top 3 Elves: $((FIRST + SECOND + THIRD))
